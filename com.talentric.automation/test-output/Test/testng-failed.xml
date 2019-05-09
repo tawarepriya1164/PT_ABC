@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Test]" parallel="tests">
+  <test thread-count="1" name="TC_01_Login_Instance_1(failed)" parallel="tests">
+    <parameter name="temp" value="temp1"/>
+    <parameter name="appURL" value="https://192.168.15.148:6565/Talentric/#/login"/>
+    <parameter name="tcID" value="TC_01_Login"/>
+    <parameter name="browserType" value="CHROME"/>
+    <classes>
+      <class name="com.talentric.Test.TalentricLogin$Login_Request">
+        <methods>
+          <include name="TC_001" invocation-numbers="0"/>
+          <include name="teatDown"/>
+        </methods>
+      </class> <!-- com.talentric.Test.TalentricLogin$Login_Request -->
+    </classes>
+  </test> <!-- TC_01_Login_Instance_1(failed) -->
+</suite> <!-- Failed suite [Test] -->
